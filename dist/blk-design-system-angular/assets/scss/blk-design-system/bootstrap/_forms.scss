@@ -5,9 +5,10 @@
 .form-control {
     display: block;
     width: 100%;
+    font-weight: bold;
     height: $input-height;
     padding: $input-padding-y $input-padding-x;
-    font-size: $font-size-base;
+    font-size: 3rem;
     line-height: $input-line-height;
     color: black;
     background-color: $input-bg;
@@ -57,7 +58,7 @@ select.form-control {
         // in IE and (under certain conditions) Edge, as it looks bad and cannot be made to
         // match the appearance of the native widget.
         // See https://github.com/twbs/bootstrap/issues/19398.
-        color: $input-color;
+        color: blue;
         background-color: $input-bg;
     }
 }
