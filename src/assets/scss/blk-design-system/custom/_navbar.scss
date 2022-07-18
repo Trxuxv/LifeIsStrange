@@ -1,8 +1,9 @@
 .navbar {
-  padding: $navbar-padding-x;
+  padding: 0px;
   width: $full-width;
   z-index: 1050;
-  background: $primary;
+  // background: $primary;
+  background-color: rgba(0, 0, 0, 0.8);
 
   .photo {
     display: inline-block;
@@ -11,6 +12,7 @@
     border-radius: 50%;
     vertical-align: middle;
     overflow: hidden;
+
     img {
       width: $full-width;
     }
@@ -22,6 +24,7 @@
       color: inherit;
       line-height: 20px;
       display: inline-flex;
+
       &:hover {
         color: $opacity-8;
       }
@@ -40,6 +43,7 @@
   .btn {
     margin: 0 5px 0 10px;
   }
+
   p {
     margin: 0;
   }
@@ -50,8 +54,9 @@
   }
 
   &.navbar-transparent {
-    background: $transparent-bg !important;
-    padding-top: 25px;
+    // background: $transparent-bg !important;
+    background: rgba(0, 0, 0, 0.8) !important;
+    // padding-top: 5px;
   }
 
   &.bg-white {
@@ -68,7 +73,8 @@
       }
 
       a.nav-link {
-        color: $black !important;
+        color: $black  !important;
+
         p {
           color: $black;
         }
@@ -81,28 +87,28 @@
     }
 
     .form-control {
-      color: $black !important;
+      color: $black  !important;
     }
 
     .form-control::placeholder {
-      color: $dark-gray !important;
+      color: $dark-gray  !important;
     }
   }
 
   &.bg-dark {
-    background: $black !important;
+    background: $black  !important;
   }
 
   &.bg-primary {
-    background-color: $primary !important;
+    background-color: $primary  !important;
   }
 
   &.bg-warning {
-    background-color: $warning !important;
+    background-color: $warning  !important;
   }
 
   &.bg-info {
-    background-color: $info !important;
+    background-color: $info  !important;
   }
 
   &.bg-success {
@@ -110,7 +116,8 @@
   }
 
   &.bg-danger {
-    background-color: $danger !important;
+    // background-color: $danger  !important;
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   .navbar-brand {
@@ -120,6 +127,7 @@
     color: $white;
     text-transform: capitalize;
     font-size: $font-paragraph;
+
     span {
       font-weight: $font-weight-bold;
     }
@@ -140,6 +148,7 @@
   z-index: 20;
   opacity: 0;
   transition: 0.2s ease;
+
   button {
     i {
       font-size: 18px;
@@ -164,9 +173,11 @@
 
 .navbar-nav li {
   padding: 0 10px;
+
   a {
     color: $white;
   }
+
   i {
     vertical-align: middle;
     font-size: 18px;
@@ -207,6 +218,7 @@
         .collapse-brand {
           font-size: $font-size-xl;
           color: $white;
+
           a {
             font-weight: $font-weight-bold;
           }
@@ -244,7 +256,7 @@
           &:focus,
           &:active,
           &:active:focus {
-            color: $black !important;
+            color: $black  !important;
           }
         }
       }
@@ -254,6 +266,7 @@
           opacity: 1;
           margin-right: 5px;
         }
+
         p {
           display: inline-block;
           margin-left: 7px;
@@ -264,6 +277,7 @@
       .modal-search .modal-dialog {
         padding: 0 40px;
       }
+
       .dropdown {
         margin: 5px 0;
 
@@ -282,6 +296,7 @@
 
     .dropdown .dropdown-menu {
       display: none;
+
       li a {
         color: $black;
       }
@@ -332,11 +347,11 @@
         border-radius: 50%;
       }
 
-      & + .navbar-toggler-bar {
+      &+.navbar-toggler-bar {
         margin-top: 7px;
       }
 
-      & + .navbar-toggler-bar.navbar-kebab {
+      &+.navbar-toggler-bar.navbar-kebab {
         margin-top: 0px;
       }
 
@@ -358,6 +373,7 @@
 
   .navbar-nav {
     .nav-link {
+
       i.fa,
       i.tim-icons {
         opacity: 0.5;
@@ -374,22 +390,27 @@
     0% {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }
   }
+
   @-moz-keyframes fadeIn {
     0% {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }
   }
+
   @keyframes fadeIn {
     0% {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }
@@ -422,6 +443,7 @@
       margin-left: 0;
     }
   }
+
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
@@ -448,6 +470,7 @@
     padding: 1.4rem;
   }
 }
+
 @media screen and (max-width: 576px) {
   .navbar[class*="navbar-toggleable-"] .container {
     margin-left: 0;
