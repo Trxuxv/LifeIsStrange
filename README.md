@@ -1,4 +1,4 @@
-<b>Link</b>:
+<b>Link</b>: https://life-is-strange.netlify.app/#/home
 
 ![image](https://user-images.githubusercontent.com/79454375/179542752-94e5ac16-2449-43fe-9b50-d6b9a629807f.png)
 
